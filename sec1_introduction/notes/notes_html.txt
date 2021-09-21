@@ -1,0 +1,96 @@
+HTML cheats
+
+press ! + Tab button
+or type html:5 + Tab button
+
+- HTML IS HYPER TEXT MARKUP LANGUAGE
+- MARKUP language meaning we use HTML to describe contents using elements.
+- Anatomy of HTML element:
+  <p>HTML is a markup language</p>
+    <p>  opening tag
+    </p> closing tag
+    HTML is a markup language => the contents
+
+ HTML Structure
+ 
+  
+<!DOCTYPE html>
+This document uses html
+  
+<html lang="en">  
+language = english
+
+  <head>
+  header containing page titles, links to css, and other things.
+  The header is not visible on page
+
+    <meta charset="UTF-8">
+    encoding UTF-8
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage title</title>
+  </head>
+
+  <body>
+   rendering part
+
+    <header>
+      <nav>
+         nav tag group elements together.
+      </nav>
+    </header>
+   
+   
+   	<h1>
+			Main (primary-biggest) heading h1: The Basic language of the web: HTML
+		</h1>
+		<h2>Secondary heading h2: The Basic language of the web: HTML</h2>
+		<h3>This is h3</h3>
+		<h4>This is h4</h4>
+		<h5>This is h5</h5>
+		<h6>h6 is the smallest heading</h6>
+    
+    <strong>text in bold</strong>
+    <em>emphasized text</em>
+    
+    lists:
+    parent element
+    <ol> ordered list (list heading) (with numbers, letters, etc.).
+    <ul> unordered list (list heading)(usually with symbols).
+      child element
+      <li> list items
+      <li> list items
+  </body>
+</html>
+
+Symantec HTML:
+  - To describe the content in a better way.
+  - What an element means and what it is for exactly.
+  <body>
+    <header>
+      <nav>
+      </nav>
+    </header>
+    <article>
+    	<header>
+				
+			</header>
+    </article>
+
+    <footer>
+    Copyright &copy;
+    </footer>
+  </body>
+
+HTML entities
+&copy;   Copyright symbol
+
+<div>  a group element.  
+    div is generic tag.
+    an old tag, but not descriptive enough like symantec elements.
+
+
+<!--secondary information that accompany the main information in the main page-->
+		<aside>
+			
+		</aside>

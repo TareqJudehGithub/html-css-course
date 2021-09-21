@@ -1,0 +1,11 @@
+Installed extensions list
+- prettier.         Code formatter.
+
+- Image preview.    Shows image preview in the gutter and on hover.
+
+- Color highlight   Highlight web colors in your editor (v.useful in CSS).
+
+- Auto Rename Tag   Highlight web colors in your editor.
+
+- Live Server       Launch a development local Server with live reload feature 
+                    for static & dynamic pages.
