@@ -5,6 +5,8 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>HTML Language</title>
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+
 	</head>
 	<body>
 		<header>
@@ -15,14 +17,16 @@
 				<a href="">Flexbox</a>
 				<a href="">CSS Grid</a>
 			</nav>
+
 		</header>
 		<article>
 			<header>
+
 				<h2>The Basic Language of the Web: HTML</h2>
 
 				<img src="../images/laura-jones.jpg" alt="Laura Jones picture" width="50px" height="50px">
 
-				<p>Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027</p>
+				<p class="related-author">Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027</p>
 				<img src="../images/post-img.jpg" alt="html code on a screen" width="500" height="200">
 			</header>
 
@@ -76,7 +80,7 @@
 
 		<aside>
 			<h4>Related posts</h4>
-			<ul>
+			<ul class="related">
 				<li>
 					<a href="https://developer.mozilla.org/en-US/" target="_blank">
 						<img src="../images/related-1.jpg" alt="developer using laptop" width="75px" height="75px">
@@ -102,7 +106,8 @@
 		</aside>
 
 		<footer>
-			Copyright &copy; 2021 by the Code Magazine
+			<p id="copyright">Copyright &copy; 2021 by the Code Magazine</p>
+
 		</footer>
 	</body>
 </html>
