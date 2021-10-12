@@ -9,10 +9,11 @@
 
 	</head>
 	<body>
-		<header>
+		<header class="main-header">
 			<h1>The Code Magazine</h1>
 			<nav>
 				<a href="blog.html">Blog</a>
+				<a href="contact.html">Contact me</a>
 				<a href="#">Challenges</a>
 				<a href="">Flexbox</a>
 				<a href="">CSS Grid</a>
@@ -26,7 +27,11 @@
 
 				<img src="../images/laura-jones.jpg" alt="Laura Jones picture" width="50px" height="50px">
 
-				<p class="related-author">Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027</p>
+				<p id="author">
+					Posted by
+					<strong>Laura Jones</strong>
+					on Monday, June 21st 2027
+				</p>
 				<img src="../images/post-img.jpg" alt="html code on a screen" width="500" height="200">
 			</header>
 
@@ -75,7 +80,6 @@
 			</ul>
 			</p>
 			<p>Hopefully you learned something new here. See you next time!</p>
-			<a href="#">Back to top</a>
 		</article>
 
 		<aside>
@@ -86,26 +90,28 @@
 						<img src="../images/related-1.jpg" alt="developer using laptop" width="75px" height="75px">
 						How to learn Web Development
 					</a>
-					<p>By Jonas Schmedtmann</p>
+					<p class="related-author">By Jonas Schmedtmann</p>
 				</li>
 				<li>
 					<a href="https://developer.mozilla.org/en-US/" target="_blank">
 						<img src="../images/related-2.jpg" alt="Thunder at night" width="75px" height="75px">
 						The Unknown Power of CSS
 					</a>
-					<p>By Jim Dillon</p>
+					<p class="related-author">By Jim Dillon</p>
 				</li>
 				<li>
 					<a href="https://developer.mozilla.org/en-US/" target="_blank">
 						<img src="../images/related-3.jpg" alt="Thunder at night" width="75px" height="75px">
 						Why JavaScript is Awesome
 					</a>
-					<p>By Matilda</p>
+					<p class="related-author">By Matilda</p>
 				</li>
 			</ul>
 		</aside>
 
 		<footer>
+			<p class="top"><a href="#">Top</a></p>
+			<p><button>Contact Me!</button></p>
 			<p id="copyright">Copyright &copy; 2021 by the Code Magazine</p>
 
 		</footer>

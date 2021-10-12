@@ -4,6 +4,7 @@
 	box-sizing: border-box;
 } */
 
+/* font-family */
 h1,
 h2,
 h3,
@@ -11,7 +12,16 @@ h3,
 p,
 li {
 	font-family: sans-serif;
+	color: #444;
 }
+
+/* font-color */
+h1,
+h2,
+h3 {
+	color: #1098ad;
+}
+
 h1 {
 	font-size: 26px;
 	text-transform: uppercase;
@@ -28,6 +38,10 @@ h2 {
 	font-weight: bold;
 }
 
+#author {
+	font-style: italic;
+	font-size: 18px;
+}
 h3 {
 	font-size: 30px;
 }
@@ -48,6 +62,21 @@ li {
 .related {
 	list-style: none;
 }
+footer {
+	text-align: center;
+}
+.top {
+	font-size: 15px;
+}
 #copyright {
 	font-size: 16px;
+}
+
+.main-header {
+	background-color: #f7f7f7;
+}
+aside {
+	background-color: #f7f7f7;
+	border-top: 5px solid #1098ad;
+	border-bottom: 5px solid #1098ad;
 }

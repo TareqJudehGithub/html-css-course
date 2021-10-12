@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">Homepage</a>
+        <a href="blog.html">Blog</a>
+      </nav>
+    </header>
+    <section>
+      <h1>Contact me</h1>
+      <form method="POST" action="">
+        First Name: <input type="text" placeholder="John" required name="firstname"><br>
+        Last Name: <input type="text" placeholder="John" name="lastname" required><br>
+        Email: <input type="email" required><br>
+        password: <input type="password" minlength="5" maxlength="10" name="password" required>
+        Birth date: <input type="date"> <br>
+
+        Gender:
+        <input type="radio" name="gender" value="male">Male
+        <input type="radio" name="gender" value="female">Female<br>
+
+        Pets: <br>
+        <input type="checkbox" name="dog">Dog<br>
+        <input type="checkbox" name="cat" id="">Cat<br>
+        <input type="checkbox" name="birdy" id="">Bird<br>
+
+        Cars: <br>
+        <select name="cars">
+          <!-- <select multiple> -->
+          <!--multiple attrib allow us to select multiple options.-->
+          <option value="GMC" name="gmc">GMC</option>
+          <option value="Toyota" name="toyota">Toyota</option>
+          <option value="Opel" name="open">Opel</option>
+        </select> <br>
+        <input type="submit" value="Send">
+        <input type="reset">
+      </form>
+    </section>
+
+  </body>
+</html>
+
+<!--
+  ?firstname=johny
+  &lastname=smith
+  &password=pass123
+  &gender=on
+  &dog=on
+  &birdy=on
+-->
