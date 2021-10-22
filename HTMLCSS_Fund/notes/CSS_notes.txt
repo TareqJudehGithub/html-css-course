@@ -53,11 +53,15 @@ practical.
 Colors in CSS
   The RGB (red, green, blue) model
   
-  red   255, 0, 0
-  green 0, 255, 0
-  blue  0, 0, 255
+  red (pure red)  255, 0, 0
+  green (pure green) 0, 255, 0
+  blue  (pure blue) 0, 0, 255
   white 255, 255, 255
   black 0, 0, 0
+
+  magenta (mix of red and blue) (255, 0, 255)
+  light-blue (0, 255, 255) 
+  yellow (255, 255, 0)
 
   rgb (255, 0, 0)   red using rgb notation/function
   rgba (255, 0, 0, 0.5)   red using rgb notation/function and 'alpha' transparency.
@@ -75,4 +79,57 @@ Colors in CSS
   popular light grey color: #b7b7b7   or rgb(183, 183, 183)
 
   
+  shorthand property: a property for defining more than one property.
+    border: 1px solid #1098ad;
+  
 
+  Pseudo classes
+
+    select first li element using first-child
+    li:first-child {
+      font-weight: bold;
+    }
+
+  select last child
+  li:last-child {
+    font-style: italic;
+  }
+  select specific child
+  li:nth-child(2) {
+    color: rgb(255, 0, 255);
+  }
+  select odd elements 
+  li:nth-child(odd) {
+    color: rgb(0, 255, 255);
+  }
+
+  select last paragraph (p) inside article element
+  article p:last-child {
+    color: red;
+  }
+
+  /* 
+Links
+LVHA => link, visited, hover, and active.
+*/
+
+/* style anchors only with href attribute */
+a:link,
+a:visited {
+	color: #1098ad;
+	text-decoration: none;
+}
+a:hover {
+	color: orangered;
+	font-weight: bold;
+	text-decoration: underline solid orangered; /* text-decoration short hard */
+
+	/* text-decoration-style: solid;
+	text-decoration-color: orangered; */
+}
+
+a:active {
+	/* when clicking state */
+	background-color: #000;
+	font-style: italic;
+}

@@ -1,20 +1,40 @@
-/* * {
+/* - universal selector * selects every single element on the page. 
+	 - Unlike the body element, in *, other elements does not inherit the *
+	   properties.
+*/
+
+* {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-} */
-
-/* font-family */
-h1,
-h2,
-h3,
-h3,
-p,
-li {
-	font-family: sans-serif;
-	color: #444;
 }
 
+/* font-family and color*/
+body {
+	color: #444;
+	font-family: sans-serif;
+}
+
+.container {
+	width: 700px;
+	margin: 0 auto;
+}
+.main-header {
+	background-color: #f7f7f7;
+	padding: 20px 40px;
+	margin-bottom: 60px;
+	height: 100px;
+}
+
+nav {
+	font-size: 18px;
+}
+article {
+	margin-bottom: 60px;
+}
+.post-header {
+	margin-bottom: 40px;
+}
 /* font-color */
 h1,
 h2,
@@ -23,13 +43,14 @@ h3 {
 }
 
 h1 {
-	font-size: 26px;
+	font-size: 28px;
 	text-transform: uppercase;
 	font-style: italic;
 }
 
 h2 {
 	font-size: 40px;
+	margin-bottom: 30px;
 }
 
 .related-author {
@@ -42,8 +63,13 @@ h2 {
 	font-style: italic;
 	font-size: 18px;
 }
+.post-img {
+	width: 100%;
+	height: auto;
+}
 h3 {
 	font-size: 30px;
+	margin-bottom: 40px;
 }
 
 h4 {
@@ -54,10 +80,33 @@ h4 {
 p {
 	font-size: 22px;
 	line-height: 1.5;
+	margin-bottom: 15px;
 }
-
+ol,
+ul {
+	margin-left: 50px;
+	margin-bottom: 20px;
+}
 li {
 	font-size: 20px;
+	margin-bottom: 10px;
+}
+li:last-child {
+	margin-bottom: 0;
+}
+
+/* first li element using pseudo classes*/
+li:first-child {
+	font-weight: bold;
+}
+/* select last child*/
+li:last-child {
+	font-style: italic;
+}
+
+/* misconception - this won't work; not the first child in article */
+article p:first-child {
+	color: red;
 }
 .related {
 	list-style: none;
@@ -72,11 +121,51 @@ footer {
 	font-size: 16px;
 }
 
-.main-header {
-	background-color: #f7f7f7;
-}
 aside {
 	background-color: #f7f7f7;
 	border-top: 5px solid #1098ad;
 	border-bottom: 5px solid #1098ad;
+	padding: 50px 0;
+	width: 500px;
+}
+
+/* 
+Links
+LVHA => link, visited, hover, and active.
+*/
+
+/* style anchors only with href attribute */
+a:link,
+a:visited {
+	color: #1098ad;
+	text-decoration: none;
+}
+a:hover {
+	color: orangered;
+	font-weight: bold;
+	text-decoration: underline solid orangered; /* text-decoration short hard */
+
+	/* text-decoration-style: solid;
+	text-decoration-color: orangered; */
+}
+
+a:active {
+	/* when clicking state */
+	background-color: #000;
+	font-style: italic;
+}
+
+/* resolving conflict*/
+#copyright {
+	color: red;
+}
+.copyright {
+	color: blue;
+}
+.text {
+	color: green;
+}
+
+footer p:nth-child(3) {
+	color: yellow;
 }
